@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /TinaFey
+exclude: ['README.md']
