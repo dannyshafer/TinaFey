@@ -1,5 +1,30 @@
 html {
 	margin: 0px;
 	padding: 0px;
-	font: normal, 100%/1.4 Helvetica,sans-serif;
+
+	font: normal, 100%/1.4 Georgia,serif;
+}
+
+.current {
+	background-color: #00ccff;
+	color: #ffffff;
+}
+
+.nav {
+	list-style-type: none;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+.nav > li {
+	display: inline-block;
+}
+
+.nav-top {
+	font-size: 1.5rem;
+}
+
+.nav-bottom {
+	font-size: .7rem;
 }
