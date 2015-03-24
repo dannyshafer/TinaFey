@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<h1>News</h1>
+<h1>Recently Discovered</h1>
 
 <ul>
-	{% for news in site.categories.news limit: 2 %}
+	{% for news in site.categories.recently-discovered limit: 2 %}
 	    <li>
 		    <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
 		    <p>{{news.meta}}</p>
