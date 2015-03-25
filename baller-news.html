@@ -1,0 +1,14 @@
+---
+layout: news
+---
+
+<h1>Baller News</h1>
+
+<ul>
+	{% for ballers in site.categories.baller_news limit: 2 %}
+	    <li>
+		    <a href="{{site.baseurl}}{{ballers.url}}">{{ballers.title}}</a>
+		    <p>{{ballers.meta}}</p>
+	    </li>
+	{% endfor %}
+</ul>

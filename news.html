@@ -4,8 +4,19 @@ layout: news
 
 <h1>News</h1>
 
+<strong>Baller News</strong>
 <ul>
-	{% for news in site.categories.news limit: 2 %}
+	{% for news in site.categories.baller_news limit: 4 %}
+	    <li>
+		    <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
+		    <p>{{news.meta}}</p>
+	    </li>
+	{% endfor %}
+</ul>
+
+<strong>Recently Discovered</strong>
+<ul>
+	{% for news in site.categories.recently-discovered limit: 4 %}
 	    <li>
 		    <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
 		    <p>{{news.meta}}</p>
